@@ -1,0 +1,241 @@
+html, body {
+    height: 100%;
+    padding: 0;
+    border: 0;
+}
+
+#startPage {
+    position: relative;
+}
+
+#gameOverScreen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  font-size: 48px;
+  display: none; /* Hidden by default */
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  z-index: 999;
+}
+
+#gameOverScreen h1 {
+  margin-bottom: 20px;
+}
+
+#gameOverScreen button {
+  padding: 12px 24px;
+  font-size: 20px;
+  cursor: pointer;
+  border: none;
+  background-color: #ff4444;
+  color: white;
+  border-radius: 8px;
+}
+
+
+h1 {
+    text-align: center;
+    font-size: 150px;
+    margin-top: 100px;
+    font-family: 'rubik puddles';
+    color: orange;
+
+}
+
+h4 {
+    margin: 0;
+    padding: 20px;
+    font-size: 30px;
+    color: white;
+    font-family: 'rubik puddles';
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: darkorange;
+    font-size: 70px;
+    margin-top: 400px;
+    margin-left: 600px;
+  }
+
+button {
+    display: block;
+    margin: 0;
+    border: none;
+    border-radius: 40px;
+    font-weight: bold;
+    cursor: pointer;
+    color: white;
+    padding: 30px 40px;
+    background-color: cornflowerblue;
+}
+
+#page1Btn {
+    margin-left: 1050px;
+    margin-top: 300px;
+    font-size: 40px;
+    font-family: 'rubik puddles';
+    color: orange;
+}
+
+#startBtn {
+    margin-left: 1200px;
+    margin-top: 900px;
+}
+
+body.page1 {
+    background-image: url(images/page2\ bg.JPG);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+body.page2 {
+    background-image: url(images/page2\ bg.JPG);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#countdown {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 120px;
+    color: white;
+    font-family: 'rubik puddles', sans-serif;
+    z-index: 999;
+}
+
+#gameTimer {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-size: 40px;
+   font-family: 'Rubik Puddles', cursive;
+   color: orange;
+   background-color: rgba(0, 0, 0, 0.4);
+   padding: 10px 20px;
+   border-radius: 10px;
+   display: none; /* hidden until game starts */
+}
+
+/* starfish */
+#starfish1 {
+    position: absolute;
+    height: 350px;
+    width: 350px;
+    transform: rotate(30deg);
+}
+
+#shell {
+    position: absolute;
+    height: 450px;
+    width: 450px;
+    margin-top: 700px;
+    margin-left: 1800px;
+    transform: rotate(100deg);
+}
+
+.bubbleContainer {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+/* for all bubbles */
+.bubbles {
+    opacity: 0;
+    position: absolute;
+}
+
+/* for all small bubbles */
+.smallBubble {
+    height: 50px;
+    width: 50px;
+}
+
+.bigBubble {
+    height: 120px;
+    width: 120px;
+}
+/*bubbles*/
+.ease-in-up {
+    animation: ease-in-up 2s ease-in-out both;
+}
+
+/* positions for bubbles */
+#bubble1 {
+    margin-left: 400px;
+    margin-top: 200px;
+}
+#bubble2 {
+    margin-left: 1500px;
+    margin-top: 300px;
+}
+#bubble3 {
+    margin-left: 1200px;
+    margin-top: 10px;
+}
+#bubble4 {
+    margin-left: 500px;
+    margin-top: 600px;
+}
+#bubble5 {
+    margin-left: 1900px;
+    margin-top: 150px;
+}
+#bubble6 {
+    margin-left: 1000px;
+    margin-top: 400px;
+}
+#bubble7 {
+    margin-left: 900px;
+    margin-top: 700px;
+}
+#bubble8 {
+    margin-left: 2200px;
+    margin-top: 700px;
+}
+#bubble9 {
+    margin-left: 1100px;
+    margin-top: 300px;
+}
+#bubble10 {
+    margin-left: 2000px;
+    margin-top: 500px;
+}
+#bubble11 {
+    margin-left: 1500px;
+    margin-top: 600px;
+}
+#bubble12 {
+    margin-left: 2300px;
+    margin-top: 50px;
+}
+#bubble13 {
+    margin-left: 300px;
+    margin-top: 90px;
+}
+
+
+/* keyframe for bubbles */
+@keyframes ease-in-up{
+    0%{
+        transform: translateY(850px);
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        transform: translateY(0px);
+        opacity: 0;
+    }
+}
